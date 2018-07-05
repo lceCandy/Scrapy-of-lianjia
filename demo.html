@@ -174,7 +174,7 @@
                 });
                 rentMarkerArray.push(rentMarker);
 
-                rentMarker.content = "<div>房源：<a target = '_blank' href='http://cd.fang.lianjia.com/loupan/rs" + address + "'>" + address + "</a><div>"
+                rentMarker.content = "<div>房源：<a target = '_blank' href='http://cd.fang.lianjia.com/loupan/?key=" + address + "'>" + address + "</a><div>"
                 rentMarker.on('click', function(e) {
                     infoWindow.setContent(e.target.content);
                     infoWindow.open(map, e.target.getPosition());
